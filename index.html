@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce website</title>
+
+   
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+   
+  <section>
+    <!-- this is section one page -->
+    <div class="section1">
+       <img src="img/Website_Logo.png" alt="" class="logo">
+       <div class="navigation">
+         <img src="img/if_List_Text_Menu_Numbers_String_Burger_1329080.png" alt="" class="toggle">
+         <a href="" class="cgr">Categories</a>
+       </div>
+       <div>
+         <a href="" class="submenu">Sound devices</a>
+         <a href="" class="submenu">Video game consoles</a>
+         <a href="" class="submenu">cell/Mobile/Wireless</a>
+         <a href="" class="submenu">Home Security Seytem</a>
+         <a href="" class="submenu">Cameras</a>
+         <a href="" class="submenu">Home theater system</a>
+         <a href="" class="submenu">Tvs</a>
+         <a href="" class="submenu">Computers</a>
+         <a href="" class="submenu">Accesessories</a>
+         <a href="" class="submenu">Games/Movies/Music</a>
+         <a href="" class="submenu">office</a>
+         <a href="" class="submenu">Home Appliences</a>
+       </div>
+    </div>
+
+    <!-- this is section2 page -->
+    <div class="section2">
+      <input type="text" placeholder="search" class="txtsrc" />
+      <button type="button" class="btnsrch">search</button>
+
+      <img src="img/if_call_322424.png" alt="" class="call-icon">
+      <span class="tel-no">01905199585</span>
+
+      <nav>
+        <a href="" class="menu-item">Home</a>
+        <a href="" class="menu-item">wish list(0)</a>
+        <a href="" class="menu-item">My Account</a>
+        <a href="" class="menu-item">shopping cart</a>
+        <a href="" class="menu-item">checkout</a>
+        <a href="" class="menu-item">items(s)</a>
+      </nav>
+
+      <div class="slider">
+        <div class="slides">
+          <div class="slide1">
+            <img src="img/4-2-iphone-png-picture-png-image.png" alt="" class="img1">
+          </div>
+          <div class="slide1">
+            <img src="img/2-2-iphone-png-picture.png" alt="" class="img2">
+          </div>
+          <div class="slide1">
+            <img src="img/1-2-iphone-png-picture-png-clipart.png" alt="" class="img3">
+          </div>
+          <div class="constant">
+            <h1>iphne 7</h1>
+            <p>Comfort is a very important nowadys because is a condition of satisfaction</p>
+            <a href="" class="btnshop">Shop Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+  <script src="./js/jquery-3.5.1.min.js"></script>
+
+  <script>
+    var $slides = $('.slides');
+    var $slide = $('.slide1');
+    var count = 1;
+
+    $(document).ready(function() {
+      setInterval(function () {
+        $slides.animate({'margin-left': '-68vw'}, 1200, function () {
+
+          count++;
+          if (count === 4) {
+            $slides.css("margin-left", 0);
+            count = 1
+          }
+        });
+      }, 4000);
+    });
+  </script>
+</body>
+</html>
